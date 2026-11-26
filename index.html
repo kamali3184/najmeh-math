@@ -325,6 +325,69 @@ footer{background:#091d18;border-top:1px solid #cdb887;color:#e5e9e5}
 @media(max-width:760px){.hero{padding:47px 0 55px}.card{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.about{background:radial-gradient(ellipse at 15% 30%,#e3ebe5,#f4f7f4 60%,#e7eee8)}}
 @media(max-width:420px){.hero{padding:38px 0 44px}.pill{border-radius:22px}}
 
+
+/* Emerald glass luxury theme */
+:root{
+ --emerald-950:#092a22;--emerald-900:#0d382d;--emerald-800:#15513f;
+ --emerald-700:#21664f;--emerald-500:#4d9272;--champagne:#d9c08e;
+ --ivory:#f4f7f2;--ink:#18372d;--muted:#65786f;
+}
+body{background:linear-gradient(145deg,#f4f7f2,#e9f0e9 55%,#f7f5ed);color:var(--ink)}
+header{background:rgba(7,39,31,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid #d9c08e88;box-shadow:0 10px 35px #092a2225}
+.brand{color:#f8f7ef}
+.nav .btn{border-radius:999px;background:linear-gradient(135deg,#f1e3c2,#cdb078);color:#17382d}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% -10%,#397b60 0%,#1b5a43 38%,#0d382d 76%,#092a22 100%);padding:68px 0 76px}
+.hero:before{content:"";position:absolute;z-index:-1;inset:18px;border:1px solid #ffffff18;border-radius:28px;box-shadow:inset 0 1px 0 #ffffff14}
+.hero:after{content:"";position:absolute;z-index:-1;width:440px;height:440px;right:-210px;bottom:-300px;border:1px solid #d9c08e66;border-radius:50%;box-shadow:0 0 0 24px #ffffff08,0 0 0 58px #ffffff06,0 0 0 100px #ffffff04}
+.hero-grid{gap:30px}
+.photo{border:6px solid #ffffffd9;border-radius:190px 190px 24px 24px;outline:1px solid #d9c08e;outline-offset:9px;box-shadow:0 28px 70px #031b14a8,0 0 35px #ffffff18;width:min(76vw,330px);height:410px}
+.eyebrow{color:#f0dfb8}
+h1 em{color:#f0dfb8}
+.lead{color:#eef5ef}
+.pill{background:linear-gradient(120deg,#ffffff12,#ffffff20);backdrop-filter:blur(12px);border:1px solid #ffffff45;border-radius:999px;color:#f4e8cb;box-shadow:inset 0 1px #ffffff25}
+.actions .btn{border-radius:999px;background:linear-gradient(135deg,#f2e5c8,#d2b77e);color:#17382d;box-shadow:0 12px 30px #031b1466;border:1px solid #fff5dc;padding:14px 30px}
+.actions .btn:hover{background:linear-gradient(135deg,#fff1d2,#dfc58f)}
+.phone{border-bottom:1px solid #d9c08e;color:#fff}
+.strip{background:rgba(255,255,255,.66);backdrop-filter:blur(14px);border-block:1px solid #ffffffd9;box-shadow:0 12px 35px #174b3810}
+.strip .wrap>div{color:#39775c}
+.strip b{color:#174333}
+section{padding:76px 0}
+.title{color:#164533}
+.sub{color:#6a7d73}
+.line{background:linear-gradient(90deg,transparent,#c5a66c,transparent);height:2px;width:90px}
+.cards{gap:18px}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(246,250,246,.68));backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid #ffffff;border-radius:20px;padding:27px 22px;box-shadow:0 14px 38px #123e2d12,inset 0 1px 0 #ffffff;transition:transform .25s,box-shadow .25s}
+.card:before{height:2px;background:linear-gradient(90deg,transparent,#d9c08e,transparent)}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 48px #123e2d20;border-color:#d9c08e99}
+.ico{border-radius:14px;background:linear-gradient(145deg,#e4efe6,#f8f7ef);color:#28694e;box-shadow:inset 0 1px #fff}
+.card h3{color:#174b38}
+.card p{color:#66796f}
+.about{background:linear-gradient(135deg,#e4ede5,#f5f6ef 52%,#e8eee7);border-block:1px solid #ffffff}
+.aboutbox{background:rgba(255,255,255,.68);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid #ffffff;border-radius:24px;box-shadow:0 20px 55px #174b3812,inset 0 1px #fff;outline:1px solid #d9c08e55;outline-offset:5px}
+.aboutbox h2{color:#174b38}
+.aboutbox p,.aboutbox li{color:#586f63}
+.aboutbox li::marker{color:#b99a60}
+.contact{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,#28684f,#104331 52%,#092a22);border-top:1px solid #d9c08e66}
+.contact:before{content:"";position:absolute;inset:14px;border:1px solid #ffffff20;border-radius:24px;pointer-events:none}
+.contact .title{color:#fff}
+.contact .sub{color:#dcebe0}
+footer{background:#06231c;color:#e5eee7;border-top:1px solid #d9c08e88}
+@media(max-width:760px){
+ .hero{padding:46px 0 55px}
+ .hero:before{inset:10px;border-radius:20px}
+ .photo{height:350px;width:min(76vw,285px)}
+ .card{border-radius:16px}
+ .aboutbox{border-radius:18px;padding:27px 22px}
+ .title{font-size:1.85rem}
+ .contact:before{inset:8px;border-radius:17px}
+}
+@media(max-width:420px){
+ .photo{height:315px;width:min(78vw,250px)}
+ .nav .btn{padding:9px 16px}
+ .cards{gap:11px}
+ .card{padding:18px 13px}
+}
+
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="#">✦ نجمه کمالی | مدرس ریاضی</a><a class="btn" href="tel:09137585806">تماس و مشاوره</a></div></header>
 <main><section class="hero"><div class="wrap hero-grid"><img class="photo" src="assets/najmeh-clean.jpg" alt="عکس نجمه کمالی"><div class="copy"><div class="eyebrow">آموزش خصوصی ریاضی</div><h1>ریاضی را بفهم،<br><em>نه اینکه فقط حفظ کنی!</em></h1><p class="lead">آموزش ریاضی از ابتدایی تا دبیرستان، متناسب با سطح و نیاز هر دانش‌آموز.</p><div class="pill">۱۰ سال سابقه تدریس • یادگیری مفهومی • رفع اشکال</div><div class="actions"><a class="btn" href="tel:09137585806">☎ تماس برای مشاوره</a><a class="phone" href="tel:09137585806">۰۹۱۳۷۵۸۵۸۰۶</a></div></div></div></section>
