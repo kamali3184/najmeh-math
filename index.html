@@ -76,6 +76,83 @@ h1{margin:12px 0;font-size:clamp(2rem,5vw,3.2rem)}
  .actions{justify-content:center}
 }
 
+
+/* Elegant redesign: calm academic luxury, responsive and uncluttered */
+:root{--n:#10243d;--n2:#1b3b5b;--g:#c5a467;--cream:#f7f4ed;--ink:#26384b}
+body{background:#f8f6f1;color:var(--ink);font-size:16px;line-height:2}
+.wrap{width:min(1120px,91%)}
+header{background:#10243d;border:0;box-shadow:0 5px 24px #10243d18}
+.nav{min-height:72px;padding:10px 0}
+.brand{font-size:1.08rem;color:#f3e6c9}
+.brand:before{height:25px;width:3px;margin-left:10px}
+.nav .btn{padding:9px 19px;border-radius:9px}
+.hero{background:linear-gradient(135deg,#10243d 0%,#173858 58%,#10243d 100%);padding:54px 0 62px}
+.hero:before{width:350px;height:350px;left:-160px;top:-210px;border-color:#d8bd8340;box-shadow:0 0 0 28px #d8bd8308,0 0 0 58px #d8bd8306}
+.hero-grid{display:flex;flex-direction:column;align-items:center;text-align:center;gap:25px;padding:18px 0}
+.photo{order:0;width:min(72vw,320px);height:390px;max-width:320px;object-fit:cover;object-position:center 27%;margin:auto;border:5px solid #f3e8d0;border-radius:190px 190px 22px 22px;outline:1px solid #c5a467;outline-offset:7px;box-shadow:0 20px 45px #0005}
+.copy{order:1;width:100%;max-width:790px;text-align:center}
+.eyebrow{justify-content:center;color:#e4ca91;font-size:.95rem;letter-spacing:.2px}
+.eyebrow:before{width:25px;background:#c5a467}
+h1{font-size:clamp(2rem,4.8vw,3.35rem);line-height:1.5;letter-spacing:-.7px;margin:8px 0 10px}
+h1 em{color:#e7cc91}
+.lead{font-size:1.12rem;line-height:2;color:#e8edf2;margin:0 auto;max-width:650px}
+.pill{background:#ffffff0a;border:1px solid #d5b77a77;color:#f0dba9;padding:7px 17px;border-radius:30px;margin:15px 0 20px}
+.actions{justify-content:center;gap:13px}
+.btn{background:linear-gradient(135deg,#ead7ad,#c4a064);color:#172c43;border-radius:10px;padding:12px 24px;box-shadow:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #0002}
+.phone{font-size:1.05rem;color:#fff}
+.strip{background:#fff;border-block:1px solid #ece5d8;box-shadow:none}
+.strip .wrap{padding:24px 0;gap:12px}
+.strip .wrap>div{font-size:1.15rem;color:#b28d50}
+.strip b{font-size:.96rem;color:#20364d}
+.strip small{font-size:.8rem;color:#788391}
+section{padding:68px 0}
+.title{font-size:2rem;color:#142b45;letter-spacing:-.5px}
+.sub{font-size:.96rem;color:#75808d;margin-bottom:27px}
+.line{width:58px;height:3px;background:#c5a467}
+.cards{gap:17px}
+.card{background:#fff;border:1px solid #eee7db;border-radius:15px;padding:24px 20px;box-shadow:0 7px 24px #172b4309;transition:transform .2s,box-shadow .2s}
+.card:before{display:none}
+.card:hover{transform:translateY(-4px);box-shadow:0 13px 28px #172b4314;border-color:#dfcfad}
+.ico{width:48px;height:48px;border-radius:14px;background:#f5efe2;color:#ad8747;font-size:1.55rem}
+.card h3{font-size:1.05rem;color:#18334f;margin:12px 0 4px}
+.card p{font-size:.9rem;line-height:1.9;color:#6c7886}
+.about{background:#f0ece3}
+.aboutbox{background:#fff;border:1px solid #e9e0d1;border-radius:18px;padding:34px 38px;box-shadow:0 10px 30px #172b4308}
+.aboutbox:after{display:none}
+.aboutbox h2{font-size:1.55rem;color:#18334f}
+.aboutbox li{padding-right:4px;color:#536273}
+.contact{background:linear-gradient(135deg,#10243d,#1a3b5b);padding:65px 0}
+.contact:before,.contact:after{opacity:.45}
+.contact .title{color:#fff}
+.contact .sub{color:#d8e0e8}
+.contact .btn{background:linear-gradient(135deg,#ead7ad,#c4a064)}
+footer{background:#0b1b2e;border-top:1px solid #b89558;color:#d9dfE6;padding:20px}
+@media(max-width:760px){
+ .hero{padding:35px 0 42px}
+ .hero-grid{gap:23px;padding:14px 0}
+ .photo{width:min(72vw,275px);height:340px;border-radius:150px 150px 18px 18px}
+ .copy{text-align:center}
+ h1{font-size:2.15rem}
+ .lead{font-size:1rem}
+ .strip .wrap{padding:18px 0}
+ section{padding:52px 0}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .card{padding:18px 14px}
+ .aboutbox{padding:25px 21px}
+ .title{font-size:1.75rem}
+}
+@media(max-width:420px){
+ .photo{height:315px;width:min(75vw,250px)}
+ .brand{font-size:.92rem}
+ .nav .btn{font-size:.85rem;padding:8px 13px}
+ .cards{grid-template-columns:1fr 1fr}
+ .card h3{font-size:.96rem}
+ .card p{font-size:.84rem}
+ .actions{gap:10px}
+ .phone{font-size:.95rem}
+}
+
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="#">✦ نجمه کمالی | مدرس ریاضی</a><a class="btn" href="tel:09137585806">تماس و مشاوره</a></div></header>
 <main><section class="hero"><div class="wrap hero-grid"><img class="photo" src="assets/najmeh-clean.jpg" alt="عکس نجمه کمالی"><div class="copy"><div class="eyebrow">آموزش خصوصی ریاضی</div><h1>ریاضی را بفهم،<br><em>نه اینکه فقط حفظ کنی!</em></h1><p class="lead">آموزش ریاضی از ابتدایی تا دبیرستان، متناسب با سطح و نیاز هر دانش‌آموز.</p><div class="pill">۱۰ سال سابقه تدریس • یادگیری مفهومی • رفع اشکال</div><div class="actions"><a class="btn" href="tel:09137585806">☎ تماس برای مشاوره</a><a class="phone" href="tel:09137585806">۰۹۱۳۷۵۸۵۸۰۶</a></div></div></div></section>
